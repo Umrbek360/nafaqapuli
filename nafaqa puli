@@ -1,0 +1,14 @@
+ jins = input("Jinsingiznu kiriting (erkak/ayol): ").lower()
+yosh = int(input("Yoshingizni kiriting: "))
+
+if yosh < 0 or yosh > 120:
+    print("Qiymat xato kiritildi!")
+else:
+    if jins == "erkak" and yosh >= 60:
+        print("Siz nafaqa yoshidasiz")
+        print(f"siz {yosh - 60} yildan berin nafaqa olasiz: ")
+    elif jins == "ayol" and yosh >= 55:
+        print("Siz nafaqa yoshidasiz")
+        print(f"siz {yosh - 55} yildan berin nafaqa olasiz:")
+    else:
+        print("Hurmatli foydalanuvchi, siz nafaqa yoshida emassiz")
